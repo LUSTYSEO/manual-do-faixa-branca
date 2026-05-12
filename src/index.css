@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core colors for BJJ landing page */
+    --background: 0 0% 0%; /* Pure black */
+    --foreground: 0 0% 100%; /* Pure white */
+
+    --card: 0 0% 5%; /* Very dark gray for cards */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Primary = Vibrant Red for accents */
+    --primary: 0 100% 50%; /* #FF0000 */
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary = Dark red for subtle areas */
+    --secondary: 0 50% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted = Dark gray */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    /* Accent = Gold for CTAs */
+    --accent: 45 100% 51%; /* Gold color */
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 0 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(0, 0%, 0%) 0%, hsl(0, 50%, 10%) 100%);
+    --card-gradient: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 3%) 100%);
+    --glow-red: 0 0 40px hsl(0 100% 50% / 0.3);
+    --glow-gold: 0 0 30px hsl(45 100% 51% / 0.5);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
