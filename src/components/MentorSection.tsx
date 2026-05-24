@@ -1,5 +1,3 @@
-import mentorImage from "@/assets/mentor-portrait.jpg";
-
 export const MentorSection = () => {
   return (
     <section className="py-24 px-4 bg-background">
@@ -12,7 +10,7 @@ export const MentorSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
           <div className="lg:w-1/3">
             <img 
-              src={mentorImage} 
+              src="https://res.cloudinary.com/doknrzkee/image/upload/v1779636408/WhatsApp_Image_2026-05-14_at_16.17.48_c6kipi.jpg" 
               alt="Mestre Guilherme Gaya" 
               className="rounded-lg border-4 border-primary shadow-glow-red w-full"
             />
